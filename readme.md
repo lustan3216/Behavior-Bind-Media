@@ -1,5 +1,7 @@
 ##**何謂class行為化？ 何謂綁定media？**
 
+行為就是指我要讓元素置中、往上往下、偏左、靠兩邊
+
 假如你要讓div裡面的元素垂直置中且下移30px 則定義class為
 ```
 .flex-vertical-center{
