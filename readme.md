@@ -1,9 +1,11 @@
+
+
 ##**何謂class行為化？ 何謂綁定media？**
 
-行為就是指我要讓元素置中、往上往下、偏左、靠兩邊
+「行為」就是指我要讓元素置中、往上往下、偏左、靠兩邊
 
 假如你要讓div裡面的元素垂直置中且下移30px 則定義class為
-```
+```scss
 .flex-vertical-center{
     display: flex;
     align-items: center;
@@ -13,7 +15,7 @@
 }
 ```
 然後在html上
-```
+```html
 <div class="flex-vertical-center mt30">
     <h3>Foo</h3>
     <h3>Bar/h3>
@@ -23,7 +25,7 @@
 
 
 假如你只要讓【平板以上】(意即不含手機)作用，讓div裡面的元素垂直置中且下移30px 則定義class為
-```
+```scss
 @media (min-width: $screen-sm-min) {
     .flex-vertical-center-sm{
         display: flex;
@@ -47,7 +49,7 @@
     * 如果你是很多個地方都要垂直置中，你必須多一個class或name，且須在css檔裡再寫一次垂直置中的語法，但如果照以上方式可以重複利用該行為化class。
 
 3. 一般前端工程師會在 @media 下了一堆長長無用的class只是因為在定義CSS屬性時有權重覆蓋的問題，權重必須要比之前的權重相等或較大，所以常造成 @media 底下屬性不多但class卻一長串。
-```
+```scss
 @media (max-width: 480px){
   modal[name="more_cuisine"]{
     .grouped.fields{
@@ -62,10 +64,10 @@
 
 而行為化綁定媒體的實際用法如下 
     
-```
-此tal  為Emmet簡寫 taxt-align:left;
-此tac  為Emmet簡寫 taxt-align:center;
-此mt30 為Emmet簡寫 margin-top:30px;
+```html
+tal  為Emmet簡寫 taxt-align:left;
+tac  為Emmet簡寫 taxt-align:center;
+mt30 為Emmet簡寫 margin-top:30px;
 
 <div class="tal-sm tac-md mt30-sm mt50-md">
     <h3>Foo</h3>
