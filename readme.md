@@ -164,35 +164,3 @@
 
 ##**有人問字的大小在RWD上怎麼解決呢？**
 這個屬於設計網頁基礎中的基礎，這本該是Style Guide Line裡面要定義好，也是網站要開發時的先決條件。
-
-##**以下為實際範例**
-
-```html
-<div class="col-md-4 col-sm-5 col-xs-12">
-    <div class="row height_fluid df">
-      <div class="col-xs-12 pt20 pt60_sm df flex-direction_column height_fluid">
-        <i class="gray_line visible-xs"></i>
-        <div class="df">
-          <div class="pr15 mla_xs mln_sm">
-            <i class="fa fa-map-marker fa-2x red mt15"></i>
-          </div>
-          <div class="pt5 mra_xs mra_sm">
-            <h6>巴巴拉巴巴</h6>
-          </div>
-        </div>
-        <div class="df mt15">
-          <div class="pr15 mla_xs mln_sm">
-            <i class="fa fa-clock-o red fa-2x mt10"></i>
-          </div>
-          <div class="pt5 mra_xs mra_sm">
-            <h6>拉拉魯拉拉</h6>
-          </div>
-        </div>
-        <i class="gray_line visible-xs"></i>
-        <div class="mta_xs">
-          <h3 class="bold tac tal_sm mb0_sm">Total Payment : 8192</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-```
