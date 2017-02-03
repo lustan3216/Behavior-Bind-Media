@@ -142,12 +142,14 @@
 
 以下為範例 
 ``` 
-     
      mt10 = mt10-xs = 手機版以上(所有media)作用 margin-top:10px 
      ml20-sm = 平板以上作用 margin-left:20px
      mb35-md = 電腦版以上作用 margin-bottom:35px
      mr100-lg = 大型螢幕以上作用 margin-right:100px
      mtn = mtn-xs = 手機版以上(所有media)作用 margin-top: 0px
+     mrl100-sm = 平板以上作用 margin-right:100px; margin-left:100px
+     mtb100-sm = 平板以上作用 margin-top:100px; margin-bottom:100px
+     mta100-sm = 平板以上作用 margin-top:auto; margin-bottom:auto
 ``` 
 ``` 
      tac-sm = 平板以上作用 text-align:center
