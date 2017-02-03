@@ -74,9 +74,46 @@
 .fluid{
   width: 100%;
 }
+.height_fluid{
+  height: 100%;
+}
 .small_btn{
   width: 84px;
   height: 32px;
+}
+.red_circular{
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  &:before,&:after,& *{
+    content:' ';
+    @extend .border_circle;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &:before{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #F58D91;
+  }
+  &:after{
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+    background-color: #EC1C24;
+  }
+  & *{
+    margin: 0;
+    z-index: 3;
+    width: 84%;
+    height: 84%;
+    background-color: #FFFFFF;
+    @extend .flex_center;
+  }
 }
 .square_icon {
   @include square_icon;
@@ -90,15 +127,21 @@
 .flex_space_around{
   @include flex_(inherit,space-around);
 }
-.vertical_space_around{
-  @extend .flex;
-  @extend .flex_space_between;
+.flex-direction_column{
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
   flex-direction: column;
 }
+.vertical_space_around{
+  @extend .flex;
+  @extend .flex_space_between;
+  @extend .flex-direction_column;
+}
 .flex_space_between{
   @include flex_(inherit,space-between);
+}
+.flex_justify_end{
+  @include flex_(inherit,flex-end);
 }
 .flex_center_start{
   @include flex_(inherit,flex-start);
@@ -118,6 +161,7 @@
   margin:15px auto;
   display: block;
 }
+
 .gray{
   color: #D4D5D6;
 }
@@ -132,47 +176,15 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.btn_setting{
-  @extend .border_sub_radius;
-  @extend .tac;
-  @extend .cursor_pointer;
-  display: inline-block;
-  font-weight: inherit;
-  font-size:1em;
-  padding: 0 15px;
-  line-height: 40px;
-  min-width: 100px;
-  height: 40px;
-}
-.ui.button.my_btn,.my_btn{
-  @extend .background_red;
-  @extend .white;
-  @extend .border_red;
-  @extend .btn_setting;
-}
-.ui.button.my_btn_reserve,.my_btn_reserve{
-  @extend .background_white;
-  @extend .red;
-  @extend .border_red;
-  @extend .btn_setting;
-}
-.my_black_btn{
-  @extend .background_black;
-  @extend .white;
-  @extend .border_black;
-  @extend .btn_setting;
-}
-.my_black_btn_reserve{
-  @extend .border_black;
-  @extend .background_white;
-  @extend .black;
-  @extend .btn_setting;
-}
+
 .four_btn{
   @extend .df;
   [class*=_btn],[class*=_btn_reserve]{
     @include calc(width,'100% / 4');
     margin: 5px;
+    &:focus{
+      color: #FFFFFF;
+    }
     i{
       font-size: 40px;
     }
@@ -182,25 +194,24 @@
     }
   }
 }
-//----------------load more -----------------
-//<div class="load_moer">
-//<input type="button" value="Load more">
-//</div>
-
-.load_more {
-  display: block;
-  text-align: center;
-  input {
-    @extend .background_red;
-    @extend .white;
-    @extend .border_sub_radius;
-    @extend .border_red;
-    font-weight: inherit;
-    font-size: 1em;
-    width: 175px;
-    height: 40px;
+.five_btn{
+  @extend .df;
+  [class*=_btn],[class*=_btn_reserve]{
+    @include calc(width,'100% / 5');
+    margin: 5px;
+    &:focus{
+      color: #FFFFFF;
+    }
+    i{
+      font-size: 40px;
+    }
+    p{
+      line-height: 10px;
+      margin: 0;
+    }
   }
 }
+
 .square_img{
   position: relative;
   width: 100%;
@@ -239,26 +250,10 @@
   @include align_two_side;
 }
 @media (max-width: $screen-xs-max ){
-  [class*=basic_bg]{
-    .four_btn{
-      @include calc(width,'100% + 10px');
-      margin-left: -5px;
-      padding: 0;
-      [class*=_btn],[class*=_btn_reserve]{
-        margin: 0;
-        border-right: none;
-      }
-    }
-  }
   .align_two_side_sm{
     & > :last-child,& > :first-child{
       float: inherit;
       display: block;
     }
-  }
-  .black_border_block{
-    margin: -1px 0 0 -20px;
-    padding: 15px;
-    @include calc(width,'100% + 40px');
   }
 }

@@ -68,16 +68,6 @@
   -webkit-flex-wrap: $_;
   -ms-flex-wrap: $_;
 }
-@mixin basic_bg($top,$bottom){
-  border-top-left-radius: $top;
-  border-top-right-radius: $top;
-  border-bottom-right-radius: $bottom;
-  border-bottom-left-radius: $bottom;
-  background-color: #FFFFFF;
-  margin-bottom: 30px;
-  width: 100%;
-  padding:30px;
-}
 @mixin text_overflow($font-size,$line-height){
   font-size: $font-size;
   line-height: $line-height;
