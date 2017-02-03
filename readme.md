@@ -51,7 +51,7 @@
 3. 一般前端工程師會在 @media 下了一堆長長無用的class只是因為在定義CSS屬性時有權重覆蓋的問題，權重必須要比之前的權重相等或較大，所以常造成 @media 底下屬性不多但class卻一長串。
 ```scss
 @media (max-width: 480px){
-  modal[name="more_cuisine"]{
+  .modal[name="more_cuisine"]{
     .grouped.fields{
       .field{
         width: 50%;
