@@ -1,6 +1,6 @@
 ##**這個Library怎麼誕生的？**
-我是正在遭受無法模組化css的工程師，因為接案的設計稿通常都是"隨機的pixel"，或是毫無規則的相似模板，在這種情況下根本無法有效率的模組化，這種情況下要如何生存呢？
-這個Library就是在解決這種困境下所誕生的神器！
+我是正在遭受無法模組化css的工程師，因為接案的設計稿通常都是"隨機的pixel"，或是毫無規則的相似模板，再加上RWD的需求，在這種情況下根本無法有效率的模組化，這種情況下要如何生存呢？
+這個Library就是在解決這種困境下所誕生的神器，能快速達成彈性RWD的語法和解決毫無規則的模板！
 
 ##**適用者**
 * 新專案
@@ -104,7 +104,7 @@
 * [bootstrap/grid](https://github.com/twbs/bootstrap/blob/v4-dev/scss/bootstrap-grid.scss)
 
 是的，以上這些已能應付80%的前端複雜RWD畫面，[tool.scss](https://github.com/lustan3216/Behavior-Bind-Media/blob/master/tool.scss)內是筆者在專案累積出來實用方法，可套用在專案上。
-另外20%還是需要靠工程師想辦法定義出最基礎(外框、底色、字色等等)的模板再做衍伸。
+另外20%還是需要靠工程師想辦法定義出最基礎(外框、底色、字色等等)的模板再用此Library做衍伸。
 
 
 ##**如何使用**
@@ -164,3 +164,35 @@
 
 ##**有人問字的大小在RWD上怎麼解決呢？**
 這個屬於設計網頁基礎中的基礎，這本該是Style Guide Line裡面要定義好，也是網站要開發時的先決條件。
+
+##**以下為實際範例**
+
+```html
+<div class="col-md-4 col-sm-5 col-xs-12">
+    <div class="row height_fluid df">
+      <div class="col-xs-12 pt20 pt60_sm df flex-direction_column height_fluid">
+        <i class="gray_line visible-xs"></i>
+        <div class="df">
+          <div class="pr15 mla_xs mln_sm">
+            <i class="fa fa-map-marker fa-2x red mt15"></i>
+          </div>
+          <div class="pt5 mra_xs mra_sm">
+            <h6>巴巴拉巴巴</h6>
+          </div>
+        </div>
+        <div class="df mt15">
+          <div class="pr15 mla_xs mln_sm">
+            <i class="fa fa-clock-o red fa-2x mt10"></i>
+          </div>
+          <div class="pt5 mra_xs mra_sm">
+            <h6>拉拉魯拉拉</h6>
+          </div>
+        </div>
+        <i class="gray_line visible-xs"></i>
+        <div class="mta_xs">
+          <h3 class="bold tac tal_sm mb0_sm">Total Payment : 8192</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+```
