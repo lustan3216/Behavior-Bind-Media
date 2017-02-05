@@ -9,6 +9,8 @@
 * 喜歡模組化的工程師
 * 想要乾淨好維護的工程師
 
+如果你不是以上類型的工程師，也建議閱讀一下以下觀念，多少會對前端有些改觀及幫助。
+
 
 ##**何謂class行為化？ 何謂綁定media？**
 
@@ -24,6 +26,15 @@
     margin-top: 30px !improtant;
 }
 ```
+有人說為什麼這邊要下 `!important?` 大家都說 `!important` 不要下！
+但你了解背後不能下 `!important` 的含義嗎? 
+
+大部分主因是因為下了不好改動。
+
+但！ 正是因為這是行為化的命名方式，你有可能class命名為「置左」但css語法卻下`taxt-align:right;`嗎？，又或是你想要下移20px但css元素卻是`margin-lift:100px;`嗎？基於這個情況，是不是就沒有理由要改動了！
+
+
+
 然後在html上
 ```html
 <div class="flex-vertical-center mt30">
