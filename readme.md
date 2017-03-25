@@ -120,8 +120,8 @@
 
 
 ## **如何使用**
-#####library內的用法目前包含 margin,padding,text-align,display
-#####另外tool.scss內方法請自行參閱或自行增加
+##### library內的用法目前包含 margin,padding,text-align,display
+##### 另外tool.scss內方法請自行參閱或自行增加
 ```
     用法解釋   *表示數字 數字可以是 0px,5px,15px,20px~~150px 以5為單位
     -------------------------------------------------------
