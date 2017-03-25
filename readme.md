@@ -1,9 +1,9 @@
-**這個Library怎麼誕生的？**
+## **這個Library怎麼誕生的？**
 接案的設計稿通常都是"隨機的pixel"，或是毫無規則的相似模板，再加上RWD的需求，在這種情況下根本無法有效率的模組化，這種情況下要如何生存呢？
 
 這個Library就是在解決這種困境下所誕生，能快速達成彈性RWD的語法和解決毫無規則的模板！
 
-**適用者**
+## **適用者**
 * 新專案
 * 接案工作者
 * 喜歡模組化的工程師
@@ -12,7 +12,7 @@
 如果你不是以上類型的工程師，也建議閱讀一下以下觀念，多少會對前端有些改觀及幫助。
 
 
-##**何謂class行為化？ 何謂綁定media？**
+## **何謂class行為化？ 何謂綁定media？**
 
 「行為」就是指我要讓元素置中、往上往下、偏左、靠兩邊
 
@@ -57,7 +57,7 @@
     }
 }
 ```
-##**為什麼要這樣？ 有什麼好處？**
+## **為什麼要這樣？ 有什麼好處？**
 
 1. 你一定遇過這狀況！! 假定義登入和註冊的區塊class為`.auth_wrapper`，隔沒多久設計師來了個稿，在使用者的編輯畫面也用到相同的模板，這時你要改class名字？
 如果再取一個`.user_edit_wrapper`然後改成 `.auth_wrapper,.user_edit_wrapper{ code }` 呢？
@@ -106,7 +106,7 @@
 
 6.維護修改變簡單。你不再需要去尋找CSS檔裡怎麼寫，不用再去查編譯出來的權重，因為一切都直接表達在class上。
 
-##**簡單幾個SCSS檔就足夠應付所有大大小小畫面？**
+## **簡單幾個SCSS檔就足夠應付所有大大小小畫面？**
 需額外載入Boostrap以下三個 Component
 * [bootstrap/variables](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss)
 * [bootstrap/utilities](https://github.com/twbs/bootstrap/tree/v4-dev/scss/utilities)
@@ -119,7 +119,7 @@
 另外20%還是需要靠工程師想辦法定義出最基礎(外框、底色、字色等等)的模板再用此Library做衍伸。
 
 
-##**如何使用**
+## **如何使用**
 #####library內的用法目前包含 margin,padding,text-align,display
 #####另外tool.scss內方法請自行參閱或自行增加
 ```
@@ -176,5 +176,5 @@
      db = db-xs = 手機版以上(所有media)作用  display:block
 ```      
 
-##**有人問字的大小在RWD上怎麼解決呢？**
+## **有人問字的大小在RWD上怎麼解決呢？**
 這個屬於設計網頁基礎中的基礎，這本該是Style Guide Line裡面要定義好，也是網站要開發時的先決條件。
