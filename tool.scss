@@ -1,0 +1,55 @@
+.fluid{
+    width: 100%;
+}
+.height_fluid{
+    height: 100%;
+}
+.flex{
+    @include flex;
+}
+.flex_wrap{
+    @include flex_wrap(wrap);
+}
+.flex_space_around{
+    @include flex_(inherit,space-around);
+}
+.flex-direction_column{
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.vertical_space_around{
+    @extend .flex;
+    @extend .flex_space_between;
+    @extend .flex-direction_column;
+}
+.flex_space_between{
+    @include flex_(inherit,space-between);
+}
+.flex_justify_end{
+    @include flex_(inherit,flex-end);
+}
+.flex_center_start{
+    @include flex_(inherit,flex-start);
+}
+.flex_center{
+    @include flex_(center,center);
+}
+.flex_vertical_center{
+    @include flex_(center,inherit);
+}
+.absolute_center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.background_img_setting{
+    @include background_size_cover;
+    background-position: center;
+}
+.border_circle{
+    @include border_radius(50%);
+}
+.border_none_radius{
+    @include border_radius(0px);
+}
