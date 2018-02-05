@@ -29,8 +29,7 @@ situation.
                           margin-top: 30px; when tablet and above
                           margin-top: 50px; when normal screen and above 
     
-    Imagine how much code you need to write if you are not using 
-behavioral binding media? !
+    Imagine how much code you need to write if you are not using behavioral binding media? !
 ```
 
 
