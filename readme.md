@@ -233,8 +233,7 @@ And recommend using Bootstrap Grid
 Not exactly, these libraries that have been able to cope with 80% of the 
 front-end complex RWD layout.
 
-[tool.scss](https://github.com/lustan3216/Behavior-Bind-Media/blob/master
-/tool.scss) contain out of practical methods, can be applied to the project.
+[tool.scss](https://github.com/lustan3216/Behavior-Bind-Media/blob/master/tool.scss) contain out of practical methods, can be applied to the project.
 
 The other 20% still need to rely on engineers to find soluations to define the most basic (frame, background color, color, etc.) template and then use this Library to do an extension.      
 
