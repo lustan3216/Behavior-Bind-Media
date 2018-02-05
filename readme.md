@@ -84,10 +84,10 @@ The following is an example
      mb35-md = normal screen and above margin-bottom: 35px
      mr100-lg = large screen and above margin-right: 100px
      
-     mtn = mtn-xs = mobile and above (all media) margin-top: 0px
-     mrl100-sm = tablet and above margin-right: 100px; margin-left: 100px
-     mtb100-sm = tablet and above margin-top: 100px; margin-bottom: 100px
-     mta100-sm = tablet and above margin-top: auto; margin-bottom: auto
+     ptn = ptn-xs = mobile and above (all media) padding-top: 0px
+     prl100-sm = tablet and above padding-right: 100px; padding-left: 100px
+     ptb100-sm = tablet and above padding-top: 100px; padding-bottom: 100px
+     pta100-sm = tablet and above padding-top: auto; padding-bottom: auto
 ``` 
 ``` 
      tac-sm = tablet and above text-align: center

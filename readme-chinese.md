@@ -76,10 +76,11 @@
      ml20-sm = 平板以上作用 margin-left:20px
      mb35-md = 電腦版以上作用 margin-bottom:35px
      mr100-lg = 大型螢幕以上作用 margin-right:100px
-     mtn = mtn-xs = 手機版以上(所有media)作用 margin-top: 0px
-     mrl100-sm = 平板以上作用 margin-right:100px; margin-left:100px
-     mtb100-sm = 平板以上作用 margin-top:100px; margin-bottom:100px
-     mta100-sm = 平板以上作用 margin-top:auto; margin-bottom:auto
+     
+     ptn = ptn-xs = 手機版以上(所有media)作用 padding-top: 0px
+     prl100-sm = 平板以上作用 padding-right:100px; padding-left:100px
+     ptb100-sm = 平板以上作用 padding-top:100px; padding-bottom:100px
+     pta100-sm = 平板以上作用 padding-top:auto; padding-bottom:auto
 ``` 
 ``` 
      tac-sm = 平板以上作用 text-align:center
