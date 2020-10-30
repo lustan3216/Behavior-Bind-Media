@@ -1,4 +1,4 @@
-## **Why the library war born？**
+## **Why the library was born？**
 The freelance project of the design draft usually with random pixel. Designer
  does not care about those pixels are integer or not.
 
